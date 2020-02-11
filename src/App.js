@@ -37,6 +37,16 @@ class App extends Component {
     })
   }
 
+  handleAddItem = (itemName) => {
+    const newItems = [
+      ...this.state.shoppingItems,
+      { name: itemName, checked: false }
+    ]
+    this.setState({
+      shoppingItems: newItems
+    })
+  }
+
   render() {
     return(
       <>
@@ -45,13 +55,15 @@ class App extends Component {
       </header>
       <main>
         <section>
-          <AddItemForm />
+          <AddItemForm 
+          onAddItem={this.handleAddItem}
+          />
         </section>
         <section>
           <ShoppingList 
           items={this.state.shoppingItems}
           /*Add the two callback props here */
-          onDeleteItem={this.handleCheckItem}
+          onDeleteItem={this.handleDeleteItem}
           onCheckItem={this.handleCheckItem}
           />
         </section>
@@ -80,4 +92,15 @@ export default App;
 /*====== Callback Props ===== (#9) */
 //Implementing delete & check buttons:
 //Now we can implement the handler functions to use setState 
-//This is normal JS - using array methods filter for delte and map for toggle (Lines: )
+//This is normal JS - using array methods filter for delete and map for toggle (Lines: )
+//Note: Notice the ' = (item) = {} ' usage of an arrow function so that we don't encouter the this problem
+
+/*====== Callback Props ===== (#10) */
+//Implementing add item button:
+//We can use callback props again for adding an item to the list 
+//We'll first pass in the callback prop from the App component (Lines: )
+//App.js ===> AddItemForm.js
+
+/*====== Callback Props ===== (#12) */
+//Implementing add item button:
+//Final step is to add the new item to the state (Lines: )
