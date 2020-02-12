@@ -36,19 +36,23 @@ export default ShoppingItem;
 // The item will have a line through when checked (Lines: 6)
 //It also has 2 buttons to check or delete 
 
-/*====== Callback Props ===== (#5) */
+/*============================================*/
+
+/*====== Callback Props ===== (#1) */
 //Testing: 
 // It's a good time to make a snapshot test 
 //Testing ===> App.js
 
-/*====== Callback Props ===== (#8) */
+/*============================================*/
+
+/*====== Callback Props ===== (#3) */
 //Implementing delete & check buttons:
 //Now we need to invoke the appropriate callback props when an onClick is clicked in each button
 //Adding an onClick to each button & using the callback prop
 //If we click on these buttons in the browser - it'll invoke the appropriate callback 
 // This would go all the way back up to the component tree - to the App component where we had both functions
 
-/*====== Callback Props ===== (#9) */
+/*====== Callback Props ===== (#4) */
 //Implementing delete & check buttons:
 //We'll change the onClick to use an arrow function & call the callback props with props.item (Lines: 12 & 19)
 //ShoppingItem.js ===> App.js

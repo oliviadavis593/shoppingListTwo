@@ -29,7 +29,9 @@ export default AddItemForm;
 //We are creating the AddItemForm component to display a form (no functionality yet)
 //AddItemForm.js ===> ShoppingList.js
 
-/*====== Callback Props ===== (#11) */
+/*============================================*/
+
+/*====== Callback Props ===== (#2) */
 //Implementing add item button:
 //Now we'll call the callback prop when the form is submitted
 //we can use properties of the event to get the value from the input node

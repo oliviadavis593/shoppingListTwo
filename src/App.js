@@ -83,24 +83,28 @@ export default App;
 //Since shoppingList is the container for the shoppingItems we need to pass the state into the component instance
 //App.js ===> AddItemForm.js
 
-/*====== Callback Props ===== (#6) */
+/*============================================*/
+
+/*====== Callback Props ===== (#1) */
 //Implementing delete & check buttons: (Lines: 16-21)
 //We can give one callback prop for each of the actions we need to perform (deleteItem & toggleItem)
 //In order for these function to reach appropriate buttons - they need to  1st be passed through ShoppingList component instance
 //App.js ===> ShoppingList.js
 
-/*====== Callback Props ===== (#9) */
+/*====== Callback Props ===== (#5) */
 //Implementing delete & check buttons:
 //Now we can implement the handler functions to use setState 
 //This is normal JS - using array methods filter for delete and map for toggle (Lines: )
 //Note: Notice the ' = (item) = {} ' usage of an arrow function so that we don't encouter the this problem
 
-/*====== Callback Props ===== (#10) */
+/*============================================*/
+
+/*====== Callback Props ===== (#1) */
 //Implementing add item button:
 //We can use callback props again for adding an item to the list 
 //We'll first pass in the callback prop from the App component (Lines: )
 //App.js ===> AddItemForm.js
 
-/*====== Callback Props ===== (#12) */
+/*====== Callback Props ===== (#3) */
 //Implementing add item button:
 //Final step is to add the new item to the state (Lines: )

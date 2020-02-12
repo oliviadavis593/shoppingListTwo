@@ -18,12 +18,14 @@ function ShoppingList(props) {
 
 export default ShoppingList; 
 
-/*====== Callback Props ===== (#3) */
+/*====== Callback Props ===== (#4) */
 //Implement the design in components:
 //Filled component with some sample shopping items inside ShoppingItem component instance
 //ShoppingList.js ===> ShoppingItem.js
 
-/*====== Callback Props ===== (#7) */
+/*============================================*/
+
+/*====== Callback Props ===== (#2) */
 //Implementing delete & check buttons: 
 //ShoppingList component will need to pass these 2 function props into each ShoppingItem
 //... so we can attach them to the buttons 
